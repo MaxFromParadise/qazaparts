@@ -1,0 +1,46 @@
+.navbar
+    height: 108px
+    &__content
+        margin: 0 auto
+        max-width: 1440px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+    &:before  
+        content: ""
+        position: absolute
+        width: 100%
+        background-color: #fff
+        height: 1px
+        top: 108px
+    &_dark
+        &:before
+            background-color: #333333
+    &__wrapper
+        width: 385px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 108px
+        margin-left: 38px
+    &__link
+        a
+            font-weight: 500
+            font-size: 18px
+            color: #fff
+            text-decoration: none
+            position: relative
+            transition: all .2s
+            &:hover
+                color: #DBA237
+                &:before
+                    content: ""
+                    height: 3px
+                    background-color: $main-color
+                    position: absolute
+                    width: 100%
+                    top: 66px
+        &_dark
+            a
+                color: #333333
