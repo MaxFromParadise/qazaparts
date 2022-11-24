@@ -1,0 +1,51 @@
+.hamburger
+    display: none
+    width: 37px
+    height: 25px
+    margin-right: 20px
+    margin-top: 20px
+    z-index: 14
+    align-items: center
+    justify-content: center
+    padding: 5px
+    border: 2px solid #af6a0a
+    border-radius: 7px
+    div
+        width: 32px
+        height: 2px
+        background-color: $main-color
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        &:after
+            content: ""
+            position: absolute
+            width: 25px
+            height: 2px
+            background-color: $main-color
+            bottom: 7px
+            transition: all .5s
+        &:before
+            content: ""
+            position: absolute
+            width: 25px
+            height: 2px
+            background-color: $main-color
+            top: 7px
+            transition: all .5s
+.hamburger.close
+    border: none
+    div
+        &:after
+            background-color: #333333
+            transform: rotate(-45deg)
+            top: 7px
+        &:before
+            background-color: #333333
+            transform: rotate(45deg)
+
+
+            
+

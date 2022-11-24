@@ -1,0 +1,318 @@
+@media (max-width: 1700px)
+    .container
+        max-width: 1075px
+    .why__wrapper
+        flex-wrap: wrap
+        width: 900px
+    .why__item
+        width: 268px
+    .catalog #card_vip
+        width: 464px
+    .catalog #card_1
+        width: 482px
+    .catalog #card_2, .catalog #card_3
+        width: 220px
+    .catalog #com2 .card__title
+        font-size: 0
+    .catalog #com3 .card__title 
+        font-size: 0
+    .catalog #com2 .card__price
+        font-size: 18px
+    .catalog #com3 .card__price 
+        font-size: 18px
+    .catalog
+        padding: 100px 50px 100px 50px
+        &__wrapper
+            grid-template-columns: 510px 250px 250px
+            grid-template-rows: repeat(2,275px)
+    .navbar__content
+        max-width: 970px
+    .promo__title
+        margin-left: 45px
+    .promo__subtitle
+        margin-left: 47px
+    .promo__button
+        margin-left: 45px
+    .about__text
+        max-width: 557px
+        font-size: 18px
+    .form
+        right: 112px
+    .about
+        padding: 100px 0 100px 45px
+    .why
+        padding: 80px 0px 80px 0px
+    .footer
+        padding: 100px 0 100px 57px
+    .products__img
+        width: 50%
+        height: 497px
+        img
+            object-fit: cover
+            width: 100%
+            height: 100%
+    .about__text
+        max-width: 844px
+    
+
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .catalog #com1
+        grid-column: 1/2
+        grid-row: 3/4
+    .catalog__wrapper 
+        grid-template-columns: 510px
+        grid-template-rows: repeat(4,275px)
+    .catalog #com2 
+        grid-column: 1/2
+        grid-row: 4/5
+    .catalog #com2 .card__title
+        font-size: 20px
+    .catalog #com3 .card__title 
+        font-size: 20px
+    .catalog #card_2, .catalog #card_3
+        width: 349px
+    .catalog #com3 
+        grid-column: 1/2
+        grid-row: 4/5
+    .catalog__wrapper
+        justify-content: center
+    .catalog__navigation
+        margin: 0 auto
+        margin-top: 40px
+    .catalog__title
+        text-align: center
+    .catalog__subtitle
+        text-align: center
+    .about__form 
+        display: none
+    .about__text
+        max-width: 100%
+    .about__title
+        text-align: center
+    .about__btn
+        margin: 0 auto
+        margin-top: 50px
+    .promo__content 
+        margin-top: 107px
+    .products__wrapper
+        padding: 30px 0 40px 22px
+
+
+@media (max-width: 992px)    
+    .container
+        max-width: 720px
+    .why__wrapper
+        flex-direction: column
+        width: 90%
+    .why__item
+        width: 374px
+    .catalog__navigation
+        flex-direction: column
+        height: 232px
+    .catalog #card_1 
+        width: 92%
+    .catalog #card_3 
+        width: 92%
+    .about 
+        padding: 100px 45px 100px 45px
+    .about__text 
+        text-align: center
+    .promo__title
+        font-size: 65px
+    .promo__content 
+        margin-top: 72px
+    .promo__subtitle 
+        font-size: 27px
+    .promo__button
+        margin-left: 45px
+    .navbar__content 
+        max-width: 712px
+    .navbar__btn
+        margin-left: 12px
+    .products__wrapper
+        max-width: 445px
+    .products__what
+        font-size: 17px
+
+
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .navbar__btn
+        display: none
+    .navbar__content 
+        max-width: 492px
+    .promo__title
+        line-height: 78px
+        font-size: 40px
+        text-align: center
+        margin-left: 0
+    .promo__subtitle
+        font-size: 25px
+        text-align: center
+        margin-left: 0
+    .promo__btn
+        margin: 0 auto
+    .promo__button 
+        margin-left: 0
+    .products__item
+        flex-direction: column
+    .products__img 
+        width: 75%
+    .vip__title
+        text-align: center
+    .products
+        padding-top: 55px
+    .products__title
+        text-align: center
+    .products__text
+        text-align: center
+    .products__address
+        text-align: center
+    .products__price
+        text-align: center
+    .products
+        .products__wrapper
+            .button
+                margin: 0 auto
+                margin-top: 25px
+@media (max-width: 576px)
+    .container
+        width: 100%
+        padding: 0 12px
+    .hamburger
+        display: flex
+        position: fixed
+        top: 20px
+        right: 7px
+    .promo__title
+        font-size: 27px
+    .promo__subtitle
+        font-size: 18px
+    .about
+        padding: 25px 2px
+    .why__item
+        width: 272px
+    .promo
+        position: relative
+    .navbar__icon
+        margin-left: 7px
+        margin-top: 20px
+    .navbar__wrapper
+        flex-direction: column
+        position: fixed
+        background-color: $main-color
+        height: 100vh
+        width: 100%
+        top: -100%
+        left: 0
+        margin-left: 0
+        z-index: 12   
+        justify-content: center  
+        transition: all .5s
+    .navbar__wrapper.active
+        top: 0
+    .navbar__link
+        margin-top: 42px
+        a
+            font-size: 27px
+    .navbar__wrapper
+        &:before
+            content: ""
+            position: absolute
+            top: 122px
+            width: 80%
+            height: 2px
+            background-color: #333333
+        &:after
+            content: "Hello"
+            font-size: 32px
+            position: absolute
+            top: 37px
+            left: 32px
+    .about__title
+        font-size: 38px
+    .about__text
+        font-size: 17px
+    .why__title
+        font-size: 25px
+    .catalog__title
+        font-size: 32px
+    .catalog__subtitle 
+        font-size: 22px
+    .catalog__wrapper 
+        grid-template-columns: 275px
+        grid-template-rows: repeat(5,195px)
+    .catalog #card_vip 
+        width: 235px
+    .catalog .card__descr
+        display: none
+    .catalog .card__rating
+        display: none
+    .catalog .card__price 
+        margin-top: 12px
+    .catalog #com1 .card__title
+        font-size: 17px
+    .catalog #com3 .card__title 
+        font-size: 17px
+    .catalog #com3 
+        grid-column: 1/2
+        grid-row: 5/6
+    .catalog #card_1
+        left: 14px
+        width: 90%
+    .catalog .card__title
+        font-size: 22px
+    .catalog .card__price
+        font-size: 27px
+    .catalog #card_3
+        left: 14px
+        width: 90%
+    .catalog #card_2
+        left: 14px
+        width: 90%
+    .catalog #com2 .card__title
+        font-size: 17px
+    .catalog #com1 .card__price
+        font-size: 18px
+    .form 
+        width: 270px
+    .form__input input 
+        width: 220px
+    .form__textarea textarea 
+        width: 220px
+    .form__button
+        font-size: 14px
+    .footer__text
+        font-size: 16px
+    .footer
+        padding: 100px 0 100px 27px
+    .vip__title
+        font-size: 37px
+    .products__wrapper 
+        max-width: 275px
+        padding: 30px 5px 40px 5px
+    .products__item
+        margin-top: 44px
+        min-height: 825px
+    .products__descr
+        display: none
+    .products__img 
+        width: 87%
+        height: 275px
+    .products__address
+        margin-top: 15px
+        font-size: 17px
+    .products__price
+        margin-top: 15px
+        font-size: 17px
+    .products__text
+        margin-top: 17px
+        font-size: 17px
+    .products__title
+        font-size: 42px
+    .comingsoon h1
+        font-size: 470%
+
